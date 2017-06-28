@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='blog'>
+  <head>
+    <meta charset="utf-8">
+    <title>Hunter's Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right">
+          <li><a ui-sref='home'>Home</a></li>
+          <li><a ui-sref="login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ui-view></ui-view>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src='./src/app.js'></script>
+    <script src='./src/views/home/homeService.js'></script>
+    <script src='./src/views/login/loginService.js'></script>
+    <script src='./src/views/home/homeCtrl.js'></script>
+    <script src='./src/views/login/loginCtrl.js'></script>
+  </body>
+</html>

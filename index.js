@@ -15,7 +15,7 @@ app.use('/', express.static(__dirname + '/public'));
 massive(config.postgres).then(dbInstance => {
   app.set('db', dbInstance)
 });
-// masterRoutes(app);
+masterRoutes(app);
 
 
 app.listen(port, () => {
