@@ -15,6 +15,7 @@ angular.module('blog', ['ui.router'])
   })
   .state('post', {
     url: '/post',
-    templateUrl: './src/views/post/post.html'
+    templateUrl: './src/views/post/post.html',
+    controller: 'postCtrl'
   })
 })

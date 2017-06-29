@@ -1,4 +1,4 @@
-angular.module('blog').controller('loginCtrl', function($scope, loginService){
+angular.module('blog').controller('loginCtrl', function($scope, loginService, $location){
   $scope.login = function(user){
     loginService.login(user).then(function(response){
       if(response.data.userFound){

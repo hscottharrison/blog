@@ -2,7 +2,7 @@ module.exports = {
   Create: (req, res, next) => {
     var instance = req.app.get('db')
 
-    instance.create_post([req.body.date, req.body.title, req.body.post_body])
+    instance.create_post([req.body.date, req.body.title, req.body.body])
     .then(() => {
       res.status(200).json('success!');
     }).catch(err => {
