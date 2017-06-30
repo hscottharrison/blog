@@ -4,20 +4,16 @@
     <meta charset="utf-8">
     <title>Hunter's Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel='stylesheet' href='./styles/home.css' />
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right">
-          <li><a ui-sref='home'>Home</a></li>
-          <li><a ui-sref="login">Login</a></li>
-        </ul>
+    <header class='home-header'>
+      <div class='blog-title'>
+        <h1>One Track Mind</h1>
+        <h5>FizzBuzz, JavaScript, and other mindless ramblings! Welcome!</h5>
       </div>
-    </nav>
+    </header>
     <ui-view></ui-view>
-
-
 
 
 
@@ -33,5 +29,6 @@
     <script src='./src/views/home/homeCtrl.js'></script>
     <script src='./src/views/login/loginCtrl.js'></script>
     <script src='./src/views/post/postCtrl.js'></script>
+    <script src='./src/views/single/singleCtrl.js'></script>
   </body>
 </html>

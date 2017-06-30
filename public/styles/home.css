@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+footer{
+  bottom: 0;
+}
+
+.home-header{
+  background: url(https://static.pexels.com/photos/102447/pexels-photo-102447.jpeg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.home-header .blog-title{
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  color: #fff;
+}
+.home-header .blog-title h1{
+  margin-bottom: 5px;
+}
+.row{
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+.recent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
