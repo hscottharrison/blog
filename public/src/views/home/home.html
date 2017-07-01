@@ -14,7 +14,7 @@
     <div>
       <ul ng-repeat='title in titles'>
         <li>
-          {{title.title}}
+          <a ui-sref='single({id: title.post_id})'>{{title.title}}</a>
         </li>
       </ul>
     </div>

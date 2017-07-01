@@ -1,10 +1,9 @@
 angular.module('blog').controller('homeCtrl', function($scope, homeService){
-  homeService.getPosts()
-  .then(function(response){
-    $scope.posts = response.data;
-    console.log(response.data);
-  })
 
+    homeService.getPosts()
+    .then(function(response){
+      $scope.posts = response.data;
+    })
 
     homeService.getPosts()
     .then(function(response){
@@ -16,5 +15,7 @@ angular.module('blog').controller('homeCtrl', function($scope, homeService){
       console.log(titles)
       $scope.titles = titles
     })
+
+
 
 })

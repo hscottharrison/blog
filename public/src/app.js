@@ -14,8 +14,13 @@ angular.module('blog', ['ui.router'])
     controller: 'loginCtrl'
   })
   .state('post', {
-    url: '/post',
+    url: '/post/',
     templateUrl: './src/views/post/post.html',
     controller: 'postCtrl'
+  })
+  .state('single', {
+    url: '/single/:id',
+    templateUrl: './src/views/single/single.html',
+    controller: 'singleCtrl'
   })
 })
