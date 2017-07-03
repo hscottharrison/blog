@@ -4,3 +4,13 @@
   <textarea name="name" placeholder='date' class="new_post_date" ng-model="post.date" rows="100" cols="80" autofocus></textarea>
 </div>
 <button type="button" ng-click="addPost(post)" class="btn" name="button">post</button>
+
+<div>
+  <h4>Delete Posts</h4>
+  <ul ng-repeat='title in titles'>
+    <li>
+      {{title.title}}
+      <button type='button' ng-click='deletePost(title.post_id)' class='btn' name='button'>Delete</button>
+    </li>
+  </ul>
+</div>
